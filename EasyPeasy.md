@@ -1,6 +1,6 @@
 # *CyberReg* [THM] EASY-PEASY
 ## Task 1 ##
-**Task 1: Enumeration Through Nmap**
+**Enumeration Through Nmap**
 
 How many ports are open?
 
