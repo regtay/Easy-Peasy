@@ -1,2 +1,2 @@
 # Easy-Peasy
-**CyberReg**
+*CyberReg*
