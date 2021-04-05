@@ -1,2 +1,1 @@
-# Easy-Peasy
-*CyberReg*
+# *CyberReg* [THM] EASY-PEASY
