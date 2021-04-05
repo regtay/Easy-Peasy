@@ -1,6 +1,7 @@
 # *CyberReg* [THM] EASY-PEASY
 ## Task 1 ##
-** Task 1: Enumeration Through Nmap **
+**Task 1: Enumeration Through Nmap**
+
 How many ports are open?
 
 What is the version of nginx?
@@ -8,7 +9,8 @@ What is the version of nginx?
 What is running on the highest port?
 
 ## Task 2 ##
-** Compromising the machine **
+
+**Compromising the machine**
 
 Using GoBuster, find flag 1.
 
