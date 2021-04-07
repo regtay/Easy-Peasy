@@ -26,6 +26,8 @@ What is running on the highest port?
 
 Using GoBuster, find flag 1.
 
+https://github.com/regtay/Easy-Peasy/blob/main/screenshots/gobuster.png
+
 This is the command used to find the first flag, flag was located
 < url/@@@@@@/@@@@@@@@ >
 
