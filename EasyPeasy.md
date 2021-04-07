@@ -25,9 +25,6 @@ PORT      STATE SERVICE VERSION
 |_http-title: Apache2 Debian Default Page: It works
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-Nmap done: 1 IP address (1 host up) scanned in 1552.77 seconds
-
 * nmap -A -p- < ipaddress >
 
 *-A (Aggressive scan options)*
