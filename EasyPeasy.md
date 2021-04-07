@@ -50,13 +50,14 @@ What is running on the highest port?
 
 Using GoBuster, find flag 1.
 
-https://github.com/regtay/Easy-Peasy/blob/main/screenshots/gobuster.png
-
 ```
-gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u <url location>
+dirbuster -H -u http://--.--.---.--- -l /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 200
+
+Unfortunately I was unable to get this to work without the GUI
 ```
 
 This is the command used to find the first flag, flag was located
+
 * < url/h-----/w------- >
 
 Once I was on this page, I decided to view the sourcepages.
@@ -74,6 +75,8 @@ Once I was on this page, I decided to view the sourcepages.
 Taking a bow I Easy Peasy lemon squeezy
 
 Further enumerate the machine, what is flag 2?
+
+
 
 Crack the hash with easypeasy.txt, What is the flag 3?
 
