@@ -8,6 +8,10 @@ https://github.com/regtay/Easy-Peasy/blob/main/screenshots/nmapscan.png
 
 * nmap -A -p- < ipaddress >
 
+-A (Aggressive scan options)
+
+-p- (port ranges)
+
 What is the version of nginx?
 
 * nginx version was shown in nmap scan
