@@ -41,7 +41,7 @@ Once I was on this page, I decided to view the sourcepages.
 
 * base64 -d < filename > to decode string
 
--d decode data
+*-d decode data*
 
 "WALAH" there goes the first flag
 
