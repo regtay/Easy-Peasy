@@ -52,7 +52,9 @@ Using GoBuster, find flag 1.
 
 https://github.com/regtay/Easy-Peasy/blob/main/screenshots/gobuster.png
 
+```
 gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u <url location>
+```
 
 This is the command used to find the first flag, flag was located
 * < url/h-----/w------- >
