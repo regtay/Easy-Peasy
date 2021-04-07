@@ -28,11 +28,22 @@ Using GoBuster, find flag 1.
 
 https://github.com/regtay/Easy-Peasy/blob/main/screenshots/gobuster.png
 
-This is the command used to find the first flag, flag was located
-< url/@@@@@@/@@@@@@@@ >
-
 gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u <url location>
 
+This is the command used to find the first flag, flag was located
+< url/h-----/w------- >
+
+Once I was on this page, I decided to view the sourcepages.
+
+Noticed a base64 string
+
+echo "base64 string" > < filename >
+
+base64 -d < filename > to decode string
+
+"WALAH" there goes the first flag
+
+Taking a bow I Easy Peasy lemon squeezy
 
 Further enumerate the machine, what is flag 2?
 
