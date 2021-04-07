@@ -27,7 +27,7 @@ What is running on the highest port?
 Using GoBuster, find flag 1.
 
 This is the command used to find the first flag, flag was located
-< url /*****/******** >
+< url/*****/******** >
 
 gobuster dir -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -u <url location>
 
