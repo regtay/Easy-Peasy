@@ -4,9 +4,15 @@
 
 How many ports are open?
 
+* nmap -A -p- <ipaddress>
+
 What is the version of nginx?
 
+* nginx version was show from nmap scan
+
 What is running on the highest port?
+
+* The higest port is 11 away for the total number of networking ports (65535)
 
 ## Task 2 ##
 
