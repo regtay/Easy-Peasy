@@ -53,6 +53,13 @@ Using GoBuster, find flag 1.
 ```
 dirbuster -H -u http://--.--.---.--- -l /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -t 200
 
+Picked up _JAVA_OPTIONS: -Dawt.useSystemAAFontSettings=on -Dswing.aatext=true
+Starting OWASP DirBuster 1.0-RC1
+Starting dir/file list based brute forcing
+Dir found: / - 200
+Dir found: /hidden/ - 200
+Dir found: /hidden/whatever/ - 200
+
 Unfortunately I was unable to get this to work without the GUI
 ```
 
