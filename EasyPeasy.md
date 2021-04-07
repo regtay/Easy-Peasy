@@ -5,21 +5,21 @@
 How many ports are open?
 
 ```
-Nmap scan report for 10.10.140.150
+Nmap scan report for --.--.---.---
 Host is up (0.13s latency).
 Not shown: 65532 closed ports
 PORT      STATE SERVICE VERSION
-80/tcp    open  http    nginx 1.16.1
+--/tcp    open  http    nginx -.--.-
 | http-robots.txt: 1 disallowed entry
 |_/
-|_http-server-header: nginx/1.16.1
+|_http-server-header: nginx/-.--.-
 |_http-title: Welcome to nginx!
-6498/tcp  open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+----/tcp  open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey:
 |   2048 30:4a:2b:22:ac:d9:56:09:f2:da:12:20:57:f4:6c:d4 (RSA)
 |   256 bf:86:c9:c7:b7:ef:8c:8b:b9:94:ae:01:88:c0:85:4d (ECDSA)
 |_  256 a1:72:ef:6c:81:29:13:ef:5a:6c:24:03:4c:fe:3d:0b (ED25519)
-65524/tcp open  http    Apache httpd 2.4.43 ((Ubuntu))
+-----/tcp open  http    Apache httpd 2.4.43 ((Ubuntu))
 | http-robots.txt: 1 disallowed entry
 |_/
 |_http-server-header: Apache/2.4.43 (Ubuntu)
