@@ -42,7 +42,7 @@ What is the version of nginx?
 
 What is running on the highest port?
 
-* The higest port is 11 away for the total number of networking ports (65535)
+* The highest port is 11 away for the total number of networking ports (65535)
 
 ## Task 2 ##
 
