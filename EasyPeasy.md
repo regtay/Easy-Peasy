@@ -10,7 +10,7 @@ https://github.com/regtay/Easy-Peasy/blob/main/screenshots/nmapscan.png
 
 What is the version of nginx?
 
-* nginx version was show from nmap scan
+* nginx version was shown from nmap scan
 
 What is running on the highest port?
 
