@@ -5,7 +5,7 @@
 How many ports are open?
 https://github.com/regtay/Easy-Peasy/blob/main/screenshots/nmapscan.png
 
-* nmap -A -p- <ipaddress>
+* nmap -A -p- < ipaddress >
 
 What is the version of nginx?
 
