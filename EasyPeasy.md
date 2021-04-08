@@ -65,7 +65,7 @@ Unfortunately I was unable to get this to work without the GUI
 
 This is the command used to find the first flag, flag was located
 
-* < url/h-----/w------- >
+* < --.--.---.---/h-----/w------- >
 
 Once I was on this page, I decided to view the sourcepages.
 
@@ -83,11 +83,33 @@ Taking a bow I Easy Peasy lemon squeezy
 
 Further enumerate the machine, what is flag 2?
 
+From earlier notes I noticed a file ------.txt
+I didn't think it would hurt to check it out at some point once I did
+*Wamb Bamb Money Gram*
 
+```
+User-Agent:*
+Disallow:/
+Robots Not Allowed
+User-Agent:a------------------------------0
+Allow:/
+This Flag Can Enter But Only This Flag No More Exceptions
+```
+hash-identifier I thought would be a good tool for this guy it pointed me in the right
+
+direction but no *Chicken Dinner*
+
+On the hunt now, after using *The Cyber Swiss Army Knife*
+
+Now on to my backup tool *md5hashing.net* Well lets just say that *Swiss Army Knife was dull*
 
 Crack the hash with easypeasy.txt, What is the flag 3?
 
+Don't truly understand why I would need to crack flag 3 stumbled across this sitting in plain
+view on one of the pages --.--.---.---:-----
+
 What is the hidden directory?
+
 
 Using the wordlist that provided to you in this task crack the hash
 what is the password?
