@@ -79,11 +79,11 @@ Once I was on this page, I decided to view the sourcepages.
 
 "WALAH" there goes the first flag
 
-Taking a bow I Easy Peasy lemon squeezy
+Taking a bow Easy Peasy lemon squeezy
 
 Further enumerate the machine, what is flag 2?
 
-From earlier notes I noticed a file ------.txt
+From earlier notes I noticed a file *------.txt*
 I didn't think it would hurt to check it out at some point once I did
 *Wamb Bamb Money Gram*
 
