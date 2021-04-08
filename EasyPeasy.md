@@ -99,7 +99,7 @@ hash-identifier I thought would be a good tool for this guy it pointed me in the
 
 direction but no *Chicken Dinner*
 
-On the hunt now, after using *The Cyber Swiss Army Knife*
+On the hunt now, after using *The Cyber Swiss Army Knife* no Luck.
 
 Now on to my backup tool *md5hashing.net* Well lets just say that *Swiss Army Knife was dull*
 
