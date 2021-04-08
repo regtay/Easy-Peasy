@@ -127,6 +127,13 @@ page source --.--.---.---:-----
       </div>
 ```
 
+So I had to sharpen my *Cyber Swiss Army Knife* comes to find out it decided to cut away
+
+at this base62 string O----------------------u
+
+/n---------------r is what it came with, what do I do with this now.
+
+--.--.---.---:/n---------------r
 
 Using the wordlist that provided to you in this task crack the hash
 
