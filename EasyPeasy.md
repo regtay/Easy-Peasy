@@ -108,10 +108,13 @@ Crack the hash with easypeasy.txt, What is the flag 3?
 Don't truly understand why I would need to crack flag 3 stumbled across this sitting in plain
 view on one of the pages --.--.---.---:-----
 
+* But I thought it would be fun if I tried it anyway, nothing. I think this was a typo intended
+for another question.
+
 What is the hidden directory?
 
-
 Using the wordlist that provided to you in this task crack the hash
+
 what is the password?
 
 What is the password to login to the machine via SSH?
