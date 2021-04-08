@@ -288,7 +288,7 @@ What is the user flag?
 ```
 boring@kral4-PC:~$ ls
 user.txt
-boring@kral4-PC:~$ cat user.txt
+b----g@kral4-PC:~$ cat user.txt
 User Flag But It Seems Wrong Like It`s Rotated Or Something
 s--t{a--------------y}
 
