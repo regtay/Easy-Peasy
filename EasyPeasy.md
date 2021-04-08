@@ -133,10 +133,97 @@ at this base62 string O----------------------u
 
 /n---------------r is what it came with, what do I do with this now.
 
---.--.---.---:/n---------------r
-
 Using the wordlist that provided to you in this task crack the hash
 
+After locating hidden directory, navigate to
+
+--.--.---.---:/n---------------r
+
+```
+view page source
+
+</style>
+</head>
+<body>
+<center>
+<img src="b-----------------.jpg" width="140px" height="140px"/>
+<p>940d---------------f8ab8---------------186a66---------------fd81</p>
+</center>
+</body>
+</html>
+```
+echo "940d---------------f8ab8---------------186a66---------------fd81" > <filename>
+
+using hashcat and the hint combo
+
+hashcat -a 0 -m 6900 <filename> easypeasy.txt **Must be run as sudo**
+
+*-a attack mode
+
+*0 MD5
+
+*-m hash type
+
+*6900 GOST R 34.11-94
+```
+sudo hashcat -a 0 -m 6900 hash.txt ~/Downloads/easypeasy.txt                                                                                                                                                              2 ⚙
+hashcat (v6.1.1) starting...
+
+/usr/share/hashcat/OpenCL/m06900_a0-optimized.cl: Pure kernel not found, falling back to optimized kernel
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-Intel(R) Xeon(R) CPU E5-4640 0 @ 2.40GHz, 13895/13959 MB (4096 MB allocatable), 8MCU
+
+/usr/share/hashcat/OpenCL/m06900_a0-optimized.cl: Pure kernel not found, falling back to optimized kernel
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 32
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers applied:
+* Optimized-Kernel
+* Zero-Byte
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Host memory required for this attack: 66 MB
+
+Dictionary cache built:
+* Filename..: /home/------/Downloads/easypeasy.txt
+* Passwords.: 5141
+* Bytes.....: 48857
+* Keyspace..: 5141
+* Runtime...: 0 secs
+
+Approaching final keyspace - workload adjusted.  
+
+940d---------------f8ab8---------------186a66---------------fd81:m------------------b
+
+Session..........: hashcat
+Status...........: Cracked
+Hash.Name........: GOST R 34.11-94
+Hash.Target......: 940d---------------f8ab8---------------186a66---------------fd81
+Time.Started.....: Thu Apr  8 01:38:43 2021 (1 sec)
+Time.Estimated...: Thu Apr  8 01:38:44 2021 (0 secs)
+Guess.Base.......: File (/home/------/Downloads/easypeasy.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    34990 H/s (6.89ms) @ Accel:256 Loops:1 Thr:1 Vec:8
+Recovered........: 1/1 (100.00%) Digests
+Progress.........: 4097/5141 (79.69%)
+Rejected.........: 1/4097 (0.02%)
+Restore.Point....: 2048/5141 (39.84%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: fantasy14 -> flash72
+
+Started: Thu Apr  8 01:36:30 2021
+Stopped: Thu Apr  8 01:38:45 2021
+```
 what is the password?
 
 What is the password to login to the machine via SSH?
