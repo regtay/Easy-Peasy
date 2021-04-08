@@ -113,6 +113,21 @@ for another question.
 
 What is the hidden directory?
 
+Any time I visit a page, I find it to be good practice to always view the page source
+```
+page source --.--.---.---:-----
+
+<div class="main_page">
+      <div class="page_header floating_element">
+        <img src="/icons/openlogo-75.png" alt="Debian Logo" class="floating_element"/>
+        <span class="floating_element">
+          Apache 2 It Works For Me
+	<p hidden>its encoded with ba....:O----------------------u</p>
+        </span>
+      </div>
+```
+
+
 Using the wordlist that provided to you in this task crack the hash
 
 what is the password?
