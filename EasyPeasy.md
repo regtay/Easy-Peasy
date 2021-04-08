@@ -364,7 +364,7 @@ drwxr-xr-x 121 root root 12288 Jun 15  2020 ..
 SHELL=/bin/sh
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
-==* *    * * *   root    cd /var/www/ && sudo bash .mysecretcronjob.sh==
+== * *    * * *   root    cd /var/www/ && sudo bash .mysecretcronjob.sh ==
 
 
 
