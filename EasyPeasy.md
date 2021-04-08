@@ -225,6 +225,7 @@ Started: Thu Apr  8 01:36:30 2021
 Stopped: Thu Apr  8 01:38:45 2021
 ```
 what is the password?
+
 ```
 wget http://--.--.---.---:-----/n--------------r/b---------------y.jpg
 --2021-04-08 09:32:55--  http://--.--.---.---:-----/n---------------r/b---------------y.jpg
@@ -241,6 +242,12 @@ b---------------y.jpg  100%[====================================================
 └─$ steghide extract -sf binarycodepixabay.jpg -p m------------------b                                                                                                     
 wrote extracted data to "secrettext.txt".
 
+*extract Extracts data from file
+
+*-sf Outputs Filename
+
+*-p Sets passphrase
+
 ┌──(user㉿kali)-[~/Documents]
 └─$ls
 secrettext.txt
@@ -255,7 +262,41 @@ password:
 ```
 
 What is the password to login to the machine via SSH?
+```
+ssh b----g@--.--.---.--- -p ----
+
+The authenticity of host '[--.1--.---.---]:---- ([--.--.---.---]:----)' can't be established.
+ECDSA key fingerprint is SHA256:hnBqxfTM/MVZzdifMyu9Ww1bCVbnzSpnrdtDQN6zSek.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[--.--.---.---]:----' (ECDSA) to the list of known hosts.
+*************************************************************************
+**        This connection are monitored by government offical          **
+**            Please disconnect if you are not authorized              **
+** A lawsuit will be filed against you if the law is not followed      **
+*************************************************************************
+b----g@--.--.---.----'s password:
+You Have 1 Minute Before AC-130 Starts Firing
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+!!!!!!!!!!!!!!!!!!I WARN YOU !!!!!!!!!!!!!!!!!!!!
+You Have 1 Minute Before AC-130 Starts Firing
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+!!!!!!!!!!!!!!!!!!I WARN YOU !!!!!!!!!!!!!!!!!!!!
+
+```
 
 What is the user flag?
+```
+boring@kral4-PC:~$ ls
+user.txt
+boring@kral4-PC:~$ cat user.txt
+User Flag But It Seems Wrong Like It`s Rotated Or Something
+s--t{a--------------y}
 
+You sneaky guy, looks like i'll have to check to see if Swiss Army Knife is still sharp
+
+Fortunately enough my knife is decided to run this as a rot13 and *Success*
+
+input: s--t{a--------------y}
+output: f--g{n--------------l}
+```
 What is the root flag?
