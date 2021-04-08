@@ -166,7 +166,7 @@ hashcat -a 0 -m 6900 <filename> easypeasy.txt **Must be run as sudo**
 
 *6900 GOST R 34.11-94
 ```
-sudo hashcat -a 0 -m 6900 hash.txt ~/Downloads/easypeasy.txt                                                                                                                                                              2 ⚙
+sudo hashcat -a 0 -m 6900 hash.txt ~/Downloads/easypeasy.txt
 hashcat (v6.1.1) starting...
 
 /usr/share/hashcat/OpenCL/m06900_a0-optimized.cl: Pure kernel not found, falling back to optimized kernel
@@ -225,6 +225,34 @@ Started: Thu Apr  8 01:36:30 2021
 Stopped: Thu Apr  8 01:38:45 2021
 ```
 what is the password?
+```
+wget http://--.--.---.---:-----/n--------------r/b---------------y.jpg
+--2021-04-08 09:32:55--  http://--.--.---.---:-----/n---------------r/b---------------y.jpg
+Connecting to --.--.--.---:-----... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 90158 (88K) [image/jpeg]
+Saving to: ‘b---------------y.jpg’
+
+b---------------y.jpg  100%[================================================================================================================================>]  88.04K   185KB/s in 0.5s
+
+2021-04-08 09:32:56 (185 KB/s) - ‘b---------------y.jpg’ saved [90158/90158]
+
+┌──(user㉿kali)-[~/Documents]
+└─$ steghide extract -sf binarycodepixabay.jpg -p m------------------b                                                                                                     
+wrote extracted data to "secrettext.txt".
+
+┌──(user㉿kali)-[~/Documents]
+└─$ls
+secrettext.txt
+
+┌──(user㉿kali)-[~/Documents]
+└─$cat
+secrettext.txt                                                                                                                                                                        
+
+username:b----g
+password:
+01101001 01100011 0------1 01101110 01110110 01100101 0------0 01110100 0------1 01100100 01101101 0------1 01110000 01100001 01110011 0------1 01110111 01101111 0------0 01100100 01110100 0------1 01100010 01101001 0------0 01100001 01110010 01111001
+```
 
 What is the password to login to the machine via SSH?
 
