@@ -446,6 +446,6 @@ cat .root.txt
 flag{6------------------------------5}
 
 ###Winner, Winner, Chicken Dinner###
-This is my first write up. I am pretty excited because because this was as challenging
+This is my first write up. I am pretty excited because this was as challenging
 as the box Easy Peasy is not so easy this box challenges you a many different levels.
 Happy Ethical Hacking
