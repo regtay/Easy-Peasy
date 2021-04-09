@@ -127,9 +127,7 @@ page source --.--.---.---:-----
       </div>
 ```
 
-So I had to sharpen my *Cyber Swiss Army Knife* comes to find out it decided to cut away
-
-at this base62 string O----------------------u
+So I had to sharpen my *Cyber Swiss Army Knife* comes to find out it decided to cut away at this base62 string O----------------------u
 
 /n---------------r is what it came with, what do I do with this now.
 
@@ -156,7 +154,7 @@ echo "940d---------------f8ab8---------------186a66---------------fd81" > <filen
 
 using hashcat and the hint combo
 
-hashcat -a 0 -m 6900 <filename> easypeasy.txt **Must be run as sudo**
+hashcat -a 0 -m 6900 <filename> easypeasy.txt **Must be ran as sudo**
 
 * -a attack mode
 
