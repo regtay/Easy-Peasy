@@ -421,7 +421,7 @@ Listen established a connection
 ```
 nc -lvnp 9001
 listening on [any] 9001 ...
-connect to [10.9.239.22] from (UNKNOWN) [10.10.175.159] 41734
+connect to [--.-.---.--] from (UNKNOWN) [--.--.---.---] 41734
 ls
 html
 whoami
