@@ -1,4 +1,4 @@
-# *CyberReg* [THM] EASY-PEASY
+# EASY-PEASY Tryhackme {THM}
 ## Task 1 ##
 **Enumeration Through Nmap**
 
